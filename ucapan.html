@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ucapan Semangat</title>
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        background: linear-gradient(
+          45deg,
+          #ff9a9e,
+          #fad0c4,
+          #fbc2eb,
+          #a1c4fd,
+          #c2e9fb
+        );
+        background-size: 400% 400%;
+        animation: gradientBackground 10s ease infinite;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        overflow: hidden;
+      }
+
+      @keyframes gradientBackground {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      .panel {
+        background: rgba(255, 255, 255, 0.95);
+        border-radius: 20px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        padding: 30px;
+        text-align: center;
+        max-width: 500px;
+        animation: fadeIn 1s ease-out;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      h1 {
+        font-size: 32px;
+        color: #ff6f61;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 20px;
+        color: #555;
+        margin: 10px 0;
+        line-height: 1.6;
+      }
+
+      .highlight {
+        font-weight: bold;
+        color: #ff4d4f;
+      }
+
+      .heart {
+        font-size: 40px;
+        color: #ff4d4f;
+        margin: 20px 0;
+        animation: heartbeat 1.5s infinite;
+      }
+
+      @keyframes heartbeat {
+        0%,
+        100% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.2);
+        }
+      }
+
+      .footer {
+        font-size: 16px;
+        color: #888;
+        margin-top: 20px;
+        font-style: italic;
+      }
+
+      .icon-container {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 20px;
+      }
+
+      .icon {
+        font-size: 30px;
+        color: #ff6f61;
+        animation: bounce 2s infinite;
+      }
+
+      @keyframes bounce {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+      }
+
+      .btn {
+        margin-top: 20px;
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 18px;
+        color: white;
+        background-color: #ff6f61;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+      }
+
+      .btn:hover {
+        background-color: #ff4d4f;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="panel">
+      <h1>Semangat Kerjanya, Ayah! 💼</h1>
+      <p>
+        Biar bisa menafkahi <span class="highlight">Bunda</span>,
+        <span class="highlight">Bertho</span>, dan
+        <span class="highlight">Puppy</span>.
+      </p>
+      <p class="heart">❤️</p>
+      <div class="icon-container">
+        <span class="icon">👨‍👩‍👦</span>
+        <span class="icon">🐾</span>
+        <span class="icon">✨</span>
+      </div>
+      <div class="footer">
+        Ingat, kamu adalah pahlawan bagi keluarga kecil kita! 💪
+      </div>
+    </div>
+  </body>
+</html>
